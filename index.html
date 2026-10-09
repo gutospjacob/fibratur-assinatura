@@ -1,1 +1,69 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><title>Imagens da assinatura - Fibratur</title></head><body style="font-family:sans-serif;padding:30px;background:#182F51;color:#fff"><h1>Imagens da assinatura de e-mail - Fibratur</h1><p>Usadas nas assinaturas dos colaboradores. Nao apagar nem renomear.</p><p><img src="painel.jpg" height="150"></p><p><img src="logo.png" height="40"></p><p><img src="iata.png" height="34"></p></body></html>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Assinatura Fibratur</title><style>
+*{box-sizing:border-box}body{margin:0;background:#F4F5F7;color:#16191C;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:15px;line-height:1.5}
+.w{max-width:1000px;margin:0 auto;padding:30px 18px 80px}h1{font-size:23px;margin:0 0 4px;color:#182F51}.s{color:#6B7280;font-size:14px;margin:0 0 20px}
+.c{background:#fff;border:1px solid #E3E6E8;border-radius:10px;padding:20px;margin-bottom:16px}.c h2{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#6B7280;margin:0 0 14px}
+label{display:block;font-size:12px;font-weight:600;color:#6B7280;margin-bottom:5px}
+input,select{width:100%;padding:9px 10px;border:1px solid #DCE0E4;border-radius:6px;font-size:14px;font-family:inherit;background:#fff;color:#16191C}
+input:focus,select:focus{outline:2px solid #182F51;outline-offset:-1px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ct{display:grid;grid-template-columns:130px 1fr 34px;gap:8px;margin-bottom:8px}
+.x{border:1px solid #DCE0E4;background:#fff;border-radius:6px;cursor:pointer;font-size:16px;color:#6B7280;padding:0}.x:hover{background:#FDECEC;color:#B4261A}
+.lk{background:none;border:0;color:#182F51;font-weight:600;font-size:13px;cursor:pointer;padding:4px 0}
+@media(max-width:640px){.g2,.g3{grid-template-columns:1fr}}
+.b{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.btn{font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;padding:10px 18px;border-radius:6px;border:0;background:#182F51;color:#fff}.btn:hover{opacity:.88}
+.btn2{background:#fff;color:#182F51;border:1px solid #182F51}
+.p{border:1px dashed #E3E6E8;border-radius:8px;padding:18px;background:#fff;overflow-x:auto}
+.ok{font-size:13px;color:#2E6B3A;font-weight:600;min-height:20px;margin-top:10px}
+details summary{cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#6B7280;font-weight:700}details[open] summary{margin-bottom:14px}
+ol{font-size:13.5px;color:#4B5563;margin:0;padding-left:20px}li{margin-bottom:8px}li b{color:#16191C}
+</style></head><body><div class="w">
+<h1>Assinatura de e-mail — Fibratur</h1><p class="s">Escolha seu nome, ajuste o que precisar, clique em <b>Copiar</b> e cole no Gmail ou no Outlook.</p>
+<div class="c"><h2>Seus dados</h2>
+<div class="g2" style="margin-bottom:14px"><div><label for="q">Colaborador</label><select id="q"></select></div><div style="display:flex;align-items:flex-end"><button class="btn btn2" id="rs" type="button">Restaurar dados originais</button></div></div>
+<div class="g2" style="margin-bottom:16px"><div><label for="nm">Nome</label><input id="nm"></div><div><label for="cg">Cargo</label><input id="cg"></div></div>
+<label>Contatos</label><div id="cts"></div><button class="lk" id="add" type="button">+ adicionar contato</button>
+</div>
+<div class="c"><details><summary>Dados da empresa e rodapé</summary>
+<div class="g3" style="margin-bottom:14px"><div><label for="et">Telefone da empresa</label><input id="et" value="+55 48 3224-1878"></div><div><label for="es">Site</label><input id="es" value="fibratur.com.br"></div><div></div>
+<div><label for="e1">Endereço — linha 1</label><input id="e1" value="Av. Osmar Cunha, 183 - Loja 4"></div><div><label for="e2">Endereço — linha 2</label><input id="e2" value="Ceisa Center - CEP 88015-100"></div><div><label for="e3">Endereço — linha 3</label><input id="e3" value="Florianópolis/SC"></div></div>
+<div class="g3"><div><label for="f1">Viagens corporativas</label><input id="f1" value="nacional@fibratur.com"></div><div><label for="f2">Setor de vistos</label><input id="f2" value="vistos@fibratur.com"></div><div><label for="f3">Comercial</label><input id="f3" value="comercial@fibratur.com"></div></div>
+</details></div>
+<div class="c"><div class="b"><h2 style="margin:0">Sua assinatura</h2><button class="btn" id="cp" type="button">Copiar assinatura</button></div><div class="p"><div id="sig"></div></div><div class="ok" id="st"></div></div>
+<div class="c"><h2>Onde colar</h2><ol><li><b>Gmail:</b> engrenagem → Ver todas as configurações → Geral → Assinatura → Criar nova. Cole com Ctrl+V e clique em Salvar alterações no fim da página.</li><li><b>Outlook / Hotmail (web):</b> engrenagem → Email → Escrever e responder → Assinatura de email.</li><li><b>Outlook (programa):</b> Arquivo → Opções → Email → Assinaturas.</li><li><b>Celular:</b> configure pelo computador. O app do Gmail só aceita texto puro.</li></ol></div>
+</div><script>
+var P=[["LARA CABRAL","Departamento de Viagens Corporativas",[["w","+55 48 99156-2363"],["e","lara@fibratur.com"]]],["LINE DISCONZI","Departamento de Viagens Corporativas",[["w","+55 48 99156-2363"],["e","line@fibratur.com"]]],["ALEXANDRE AUGUSTO SPENGLER JACOB","Diretor Comercial",[["w","+55 48 98841-1876"],["e","comercial@fibratur.com"]]],["AMANDA BAZEGGIO BRAGA","SETOR DE VISTOS",[["w","+55 48 99156-2366"],["e","vistos@fibratur.com"]]],["BETINA TANCREDO","Consultora de Viagens",[["w","+55 48 99983-2494"],["e","betina@fibratur.com"]]],["CAMILLA DE SOUZA","Estagiaria",[["d","+55 48 3224-1878"],["e","estagiaria@fibratur.com.br"]]],["CAROLINA A. SPENGLER","Diretora Comercial",[["w","+55 48 99119-2494"],["e","carol@fibratur.com"]]],["CRISTIANE C. VARANI","Consultora de Viagens",[["w","+55 48 99983-2494"],["e","cristiane@fibratur.com"]]],["ELAINE RIOS","Consultora de Viagens",[["w","+55 48 99983-2494"],["e","elaine@fibratur.com"]]],["ELTON DOS SANTOS","Consultor de Viagens Corporativas",[["w","+55 48 99156-2363"],["e","elton@fibratur.com"]]],["FERNANDO BONATTO","Departamento Financeiro",[["d","+55 48 3224-1878"],["e","faturamento@fibratur.com"]]],["GUSTAVO CESCA","Departamento Financeiro",[["d","+55 48 3224-1878"],["e","cesca@fibratur.com.br"]]],["GUSTAVO HAILER","Consultor de Viagens",[["w","+55 48 99156-2374"],["e","gustavo@fibratur.com"]]],["ISMAEL ROSA","Gerente Financeiro",[["d","+55 48 3212-5220"],["e","ismael@fibratur.com"]]],["JEFFERSON DORNELES","Assistente Vip",[["w","+55 48 99154-2736"],["e","jefferson@fibratur.com"]]],["JOKE SANTOS","Recepcao",[["d","+55 48 3224-1878"],["e","jokelene@fibratur.com"]]],["JOSE ALEXANDRE D. JACOB","Diretor Financeiro",[["w","+55 48 99983-4355"],["e","alexandre@fibratur.com"]]],["JOYCE GANASSALI DE OLIVEIRA","Departamento de Viagens Corporativas",[["w","+55 48 99156-2363"],["e","nacional@fibratur.com"]]],["RAFAELA MARQUES","Departamento de Viagens Corporativa",[["w","+55 48 99156-2363"],["e","nacional@fibratur.com"]]],["RAI BARBOSA DA SILVA","Consultora de Viagens",[["w","+55 48 99983-2494"],["e","rai@fibratur.com"]]],["RENATO RAKOCI VOLPE","Gerente",[["d","+55 48 3212-5242"],["e","renato@fibratur.com"]]],["VINICIUS SOLDUCHA DE GOIZ","Analista de Dados e BI",[["d","+55 48 3224-1878"],["e","vinicius@fibratur.com"]]],["LUANA DUARTE MORAES","Consultora de Viagens",[["w","+55 48 99983-2494"],["e","luana@fibratur.com"]]],["MARIA FERRARI","Departamento de Viagens Corporativas",[["w","+55 48 99156-2363"],["e","maria@fibratur.com"]]],["MARISA BALDEZ DO CANTO","Departamento Financeiro",[["d","+55 48 3224-1878"],["e","controle@fibratur.com"]]],["PAMELA FERNANDES SOUZA","Assistente Comercial",[["e","pamela@fibratur.com.br"]]],["PAULINE EGER VIEIRA","Consultora de Viagens Corporativas",[["w","+55 48 99156-2363"],["e","pauline@fibratur.com"]]]];
+var U='https://gutospjacob.github.io/fibratur-assinatura';
+var G="'Century Gothic',Jost,Futura,Arial,sans-serif",N='#182F51',PB='#0C1D38',RT='#93A3BE',CG='#D7DEE9',B='#FFFFFF';
+var L={d:'Direto',w:'WhatsApp',c:'WeChat',e:'E-mail'};
+function $(i){return document.getElementById(i);}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function hr(k,v){var n=v.replace(/[^0-9]/g,'');if(k=='w')return n?'https://wa.me/'+n:'';if(k=='d')return n?'tel:+'+n:'';if(k=='e')return v?'mailto:'+v:'';return '';}
+function a(h,t,c){return h?'<a href="'+esc(h)+'" style="color:'+c+';text-decoration:none;">'+t+'</a>':t;}
+function sp(h){return '<div style="height:'+h+'px;font-size:0;line-height:0;">&nbsp;</div>';}
+function tx(t,f,c,x){return '<div style="font-family:'+G+';font-size:'+f+'px;color:'+c+';'+(x||'')+'">'+t+'</div>';}
+function ro(t,c,f,l){return '<span style="font-family:'+G+';font-size:'+(f||8)+'px;letter-spacing:'+(l||'1.1px')+';text-transform:uppercase;color:'+c+';font-weight:bold;">'+t+'</span>';}
+function im(f,w,h,t){return '<img src="'+U+'/'+f+'" alt="'+t+'" width="'+w+'" height="'+h+'" style="display:block;border:0;width:'+w+'px;height:'+h+'px;">';}
+function ln(r,lw,fs){var s='';r.forEach(function(x){s+='<tr><td width="'+lw+'" height="20" style="width:'+lw+'px;height:20px;line-height:20px;padding:0;vertical-align:middle;">'+ro(x[0],RT)+'</td><td height="20" style="height:20px;padding:0;vertical-align:middle;font-family:'+G+';font-size:'+fs+'px;line-height:20px;color:#FFFFFF;white-space:nowrap;">'+a(x[2],x[1],'#FFFFFF')+'</td></tr>';});return '<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">'+s+'</table>';}
+function rowEl(k,v){var d=document.createElement('div');d.className='ct';
+d.innerHTML='<select><option value="d">Direto</option><option value="w">WhatsApp</option><option value="c">WeChat</option><option value="e">E-mail</option></select><input placeholder="número ou e-mail"><button class="x" type="button" title="Remover">×</button>';
+d.querySelector('select').value=k;d.querySelector('input').value=v;
+d.querySelector('select').onchange=r;d.querySelector('input').oninput=r;d.querySelector('.x').onclick=function(){d.parentNode.removeChild(d);r();};
+$('cts').appendChild(d);}
+function load(){var p=P[+$('q').value];$('nm').value=p[0];$('cg').value=p[1];$('cts').innerHTML='';p[2].forEach(function(x){rowEl(x[0],x[1]);});r();}
+function mk(){
+var rows=[];Array.prototype.forEach.call($('cts').querySelectorAll('.ct'),function(d){var k=d.querySelector('select').value,v=d.querySelector('input').value.trim();if(v)rows.push([L[k],esc(v),hr(k,v)]);});
+var et=$('et').value.trim(),es=$('es').value.trim();
+var de=ln([['Telefone',esc(et),hr('d',et)],['Site',esc(es),es?'https://'+es.replace(/^https?:\/\//,''):''],['Endereço',esc($('e1').value)+'<br>'+esc($('e2').value)+'<br>'+esc($('e3').value),'']],78,10.5);
+var rd=[['Viagens corporativas',$('f1').value.trim(),265],['Setor de vistos',$('f2').value.trim(),281],['Comercial',$('f3').value.trim(),152]].map(function(c){return '<td width="'+c[2]+'" style="width:'+c[2]+'px;padding:0 10px 0 0;vertical-align:middle;">'+ro(c[0],N,8,'1.2px')+'<div style="font-family:'+G+';font-size:11.5px;color:'+N+';padding-top:4px;white-space:nowrap;">'+a(c[1]?'mailto:'+c[1]:'',esc(c[1]),N)+'</div></td>';}).join('');
+return '<table cellpadding="0" cellspacing="0" border="0" bgcolor="'+N+'" style="border-collapse:collapse;width:900px;max-width:900px;background-color:'+N+';font-family:'+G+';"><tr><td rowspan="2" width="202" bgcolor="'+PB+'" style="width:202px;background-color:'+PB+';vertical-align:top;font-size:0;line-height:0;">'+im('painel.jpg',202,196,'Fibratur Turismo e Viagens')+'</td><td width="342" bgcolor="'+N+'" style="width:342px;background-color:'+N+';padding:16px 14px 14px 20px;vertical-align:top;">'+tx(esc($('nm').value),19,B,'font-weight:bold;letter-spacing:.03em;line-height:1.15;')+tx(esc($('cg').value),10.5,CG,'padding-top:5px;line-height:1.3;')+sp(12)+ln(rows,68,12)+'</td><td width="1" bgcolor="'+B+'" style="width:1px;background-color:'+B+';font-size:0;line-height:0;">&nbsp;</td><td width="275" bgcolor="'+N+'" style="width:275px;background-color:'+N+';padding:16px 0 14px 16px;vertical-align:top;">'+im('logo.png',136,40,'Fibratur')+sp(13)+de+'</td><td width="80" bgcolor="'+N+'" align="right" style="width:80px;background-color:'+N+';padding:16px 14px 0 0;vertical-align:top;">'+im('iata.png',75,34,'IATA Accredited Agent')+'</td></tr><tr><td colspan="4" bgcolor="'+B+'" height="39" style="background-color:'+B+';height:39px;padding:0 0 0 20px;vertical-align:middle;"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;"><tr>'+rd+'</tr></table></td></tr></table>';}
+function r(){$('sig').innerHTML=mk();}
+P.forEach(function(p,i){var o=document.createElement('option');o.value=i;o.textContent=p[0];$('q').appendChild(o);});
+$('q').onchange=load;$('rs').onclick=load;$('add').onclick=function(){rowEl('w','');};
+['nm','cg','et','es','e1','e2','e3','f1','f2','f3'].forEach(function(i){$(i).oninput=r;});
+$('cp').onclick=function(){var e=$('sig'),s=$('st');
+if(navigator.clipboard&&window.ClipboardItem){navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([e.innerHTML],{type:'text/html'}),'text/plain':new Blob([e.innerText],{type:'text/plain'})})]).then(function(){s.textContent='Copiada! Agora cole com Ctrl+V no campo de assinatura.';}).catch(function(){s.textContent='Não deu para copiar. Selecione a assinatura com o mouse e use Ctrl+C.';});}
+else{s.textContent='Selecione a assinatura com o mouse e use Ctrl+C.';}
+setTimeout(function(){s.textContent='';},7000);};
+load();
+</script></body></html>
